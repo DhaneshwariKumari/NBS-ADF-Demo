@@ -1,0 +1,9 @@
+{
+	"name": "demo-nbs-adf-dev",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f8d263df-5589-454c-ac66-e4996610e37b",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
