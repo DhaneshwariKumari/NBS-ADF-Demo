@@ -1,0 +1,31 @@
+{
+	"name": "IR-HyperScaleDB",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "UK South",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8,
+				"vNetProperties": {
+					"vNetId": "/subscriptions/766f52c3-e713-4ff7-8dd1-0bba63e282b2/resourceGroups/NBS-ADF/providers/Microsoft.Network/virtualNetworks/NBS-ADF-vnet",
+					"subnet": "default"
+				}
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "nbs-azure-sql-server.database.windows.net",
+					"catalogAdminUserName": "nbs-azure-sql-server-admin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
